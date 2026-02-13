@@ -1,0 +1,195 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-color);
+
+    /* Background Image */
+    background-image: url('image/black_background.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black; 
+    padding: 15px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    position: fixed; 
+    top: 0;
+    width: 100%;
+    z-index: 1000; 
+    border-bottom: 2px solid white;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: blue;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333; 
+    font-size: 16px;
+    font-weight: 500;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: all 0.3s ease; 
+}
+
+nav ul li a:hover {
+    color: #ffffff; 
+    background-color: #007bff;
+    transform: scale(1.05);
+}
+
+nav ul li a.active {
+    color: #ffffff;
+    background-color: #0056b3; 
+    font-weight: bold;
+}
+
+
+.profile-card {
+    background-color: whitesmoke;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.profile-img {
+    width: 150px; 
+    height: 150px;
+    border-radius: 50%; 
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+h2 {
+    color: #007bff; 
+    margin: 10px 0;
+}
+
+p {
+    color: #555;
+    margin: 5px 0;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.icon {
+    font-size: 40px; 
+    color: #007bff; 
+    margin: 0 15px;
+    transition: all 0.3s ease;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); 
+}
+.icon:hover {
+    color: #0056b3; 
+    transform: scale(1.2); 
+}
+
+.btn {
+    display: inline-block;
+    background-color: #007bff; 
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3; 
+}
+
+
+
+.social-icons {
+margin-top: 15px;
+}
+
+.social-icons a img {
+    width: 30px;
+    margin: 0 5px; transition: transform 0.3s;
+}
+
+.social-icons a img:hover { 
+    transform: scale(1.2);
+}
+
+
+.facebook:hover {
+  color: #3b5998;
+  text-shadow: 0 0 10px #3b5998, 0 0 20px blue, 0 0 30px mediumblue;
+}
+
+.instagram:hover {
+  color: #e4405f;
+  text-shadow: 0 0 10px #e4405f, 0 0
+  20px #e4405f, 0 0 30px #e4405f;
+}
+.github:hover {
+  color: #ffffff;
+  text-shadow: 
+    0 0 10px #ffffff,
+    0 0 20px #ffffff,
+    0 0 30px #ffffff;
+}
+
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 10px;
+    }
+    nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    nav ul li {
+        margin: 5px 0;
+    }
+    .profile-card {
+        max-width: 90%;
+        padding: 15px;
+    }
+    .profile-img {
+        width: 120px;
+        height: 120px;
+    }
+}
