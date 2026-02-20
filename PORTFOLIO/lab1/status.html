@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ship Status - The Observer</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="crew.html">Crew</a>
+            <a href="status.html" class="active">Status</a>
+        </nav>
+        <h1>The Observer: Mission to Alpha Centauri</h1>
+        <h2>Mission Status: <span class="status-active">Active</span></h2>
+    </header>
+    <main>
+        <section class="status-section">
+            <h2>Ship Diagnostics</h2>
+
+            <div class="table-container">
+                <table>
+                    <caption>Ship System Status</caption>
+                    <thead>
+                        <tr>
+                            <th>System Name</th>
+                            <th>Status</th>
+                            <th>Power Level</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="system-online">
+                            <td>Life Support</td>
+                            <td><span class="badge badge-online">Online</span></td>
+                            <td>
+                                <div class="power-bar">
+                                    <div class="power-fill" style="width: 90%;"></div>
+                                    <span>90%</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="system-online">
+                            <td>Hyper Drive</td>
+                            <td><span class="badge badge-online">Online</span></td>
+                            <td>
+                                <div class="power-bar">
+                                    <div class="power-fill" style="width: 85%;"></div>
+                                    <span>85%</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="system-online">
+                            <td>Shields</td>
+                            <td><span class="badge badge-online">Online</span></td>
+                            <td>
+                                <div class="power-bar">
+                                    <div class="power-fill" style="width: 92%;"></div>
+                                    <span>92%</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="system-offline">
+                            <td>Weapons</td>
+                            <td><span class="badge badge-offline">Offline</span></td>
+                            <td>
+                                <div class="power-bar">
+                                    <div class="power-fill offline" style="width: 0%;"></div>
+                                    <span>0%</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="system-online">
+                            <td>Navigation</td>
+                            <td><span class="badge badge-online">Online</span></td>
+                            <td>
+                                <div class="power-bar">
+                                    <div class="power-fill" style="width: 88%;"></div>
+                                    <span>88%</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="system-warning">
+                            <td>Communications</td>
+                            <td><span class="badge badge-warning">Warning</span></td>
+                            <td>
+                                <div class="power-bar">
+                                    <div class="power-fill warning" style="width: 45%;"></div>
+                                    <span>45%</span>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 <a href="https://www.nasa.gov" target="_blank">United Space Federation</a></p>
+        <p>Instructor: Mr. Ray An Quinon | Web System and Technologies</p>
+    </footer>
+</body>
+</html>

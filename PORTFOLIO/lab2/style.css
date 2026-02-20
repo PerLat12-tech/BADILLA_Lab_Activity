@@ -1,0 +1,251 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url('../image/black_background.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Profile Card Styles */
+.profile-card {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    padding: 2.5rem;
+    max-width: 450px;
+    width: 100%;
+    text-align: center;
+    animation: fadeInUp 0.6s ease;
+}
+
+.profile-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 10px 30px rgba(0, 123, 255, 0.3);
+    border: 5px solid #007bff;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.profile-img:hover {
+    transform: scale(1.05);
+}
+
+h2 {
+    color: #007bff;
+    margin: 1rem 0 0.5rem;
+    font-size: 1.8rem;
+}
+
+.section {
+    color: #555;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.motto {
+    color: #007bff;
+    font-style: italic;
+    margin: 1rem 0 1.5rem;
+    font-size: 1.1rem;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.social-link {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.social-link img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.social-link:hover img {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.social-link.facebook:hover img {
+    box-shadow: 0 8px 20px rgba(59, 89, 152, 0.5);
+}
+
+.social-link.instagram:hover img {
+    box-shadow: 0 8px 20px rgba(228, 64, 95, 0.5);
+}
+
+.social-link.github:hover img {
+    box-shadow: 0 8px 20px rgba(51, 51, 51, 0.5);
+}
+
+.btn {
+    display: inline-block;
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white;
+    text-decoration: none;
+    padding: 12px 35px;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.3);
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 123, 255, 0.4);
+    background: linear-gradient(135deg, #0056b3, #003d82);
+}
+
+/* About Container Styles */
+.about-container {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    padding: 2.5rem;
+    max-width: 700px;
+    width: 100%;
+    text-align: center;
+    animation: fadeInUp 0.6s ease;
+}
+
+.about-container h1 {
+    color: #007bff;
+    margin-bottom: 1.5rem;
+    font-size: 2.2rem;
+}
+
+.about-content {
+    text-align: left;
+    margin: 2rem 0;
+}
+
+.about-content p {
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+    font-size: 1.05rem;
+}
+
+.info-section {
+    background: linear-gradient(135deg, #007bff11, #0056b311);
+    padding: 1.5rem;
+    border-radius: 15px;
+    margin: 1.5rem 0;
+    border-left: 4px solid #007bff;
+}
+
+.info-section h2 {
+    color: #007bff;
+    font-size: 1.4rem;
+    margin-bottom: 0.8rem;
+    text-align: left;
+}
+
+.info-section p {
+    margin-bottom: 0;
+}
+
+.motto-section {
+    background: linear-gradient(135deg, #007bff22, #0056b322);
+    padding: 1.5rem;
+    border-radius: 15px;
+    margin: 1.5rem 0;
+    text-align: center;
+}
+
+.motto-section h3 {
+    color: #007bff;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.motto-section p {
+    font-style: italic;
+    font-size: 1.3rem;
+    color: #0056b3;
+    font-weight: 600;
+    margin: 0;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Footer Styles */
+.profile-footer {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(0, 123, 255, 0.2);
+}
+
+.profile-footer p {
+    color: #007bff;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile-card,
+    .about-container {
+        padding: 2rem;
+        max-width: 90%;
+    }
+
+    .profile-img {
+        width: 150px;
+        height: 150px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .about-container h1 {
+        font-size: 1.8rem;
+    }
+
+    .social-icons {
+        gap: 1rem;
+    }
+
+    .social-link img {
+        width: 40px;
+        height: 40px;
+    }
+}

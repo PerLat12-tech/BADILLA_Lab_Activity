@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jesrelle Dave Garcia — Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Custom Cursor -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- Background Effects -->
+<div class="bg-mesh"></div>
+<div class="bg-grid"></div>
+
+<div class="wrapper">
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-logo">JD<span>.</span></div>
+        <div class="nav-links">
+            <a href="#" onclick="document.querySelector('.card-bio').scrollIntoView({behavior:'smooth'}); return false;">About</a>
+            <a href="#" onclick="document.querySelector('.card-skills').scrollIntoView({behavior:'smooth'}); return false;">Skills</a>
+            <a href="#" onclick="document.querySelector('.card-labs').scrollIntoView({behavior:'smooth'}); return false;">Projects</a>
+            <button class="nav-cta" onclick="window.location.href='mailto:jesrellgarcia13@gmail.com'">Hire Me</button>
+        </div>
+    </nav>
+
+    <!-- Marquee Bar -->
+    <div class="marquee-bar">
+        <div class="marquee-inner">
+            <span class="marquee-item">Web Developer <span>★</span></span>
+            <span class="marquee-item">IT Student <span>★</span></span>
+            <span class="marquee-item">USTP <span>★</span></span>
+            <span class="marquee-item">HTML <span>★</span></span>
+            <span class="marquee-item">CSS <span>★</span></span>
+            <span class="marquee-item">JavaScript <span>★</span></span>
+            <span class="marquee-item">Oroquieta City <span>★</span></span>
+            <span class="marquee-item">Available for Projects <span>★</span></span>
+            <!-- Duplicate for seamless loop -->
+            <span class="marquee-item">Web Developer <span>★</span></span>
+            <span class="marquee-item">IT Student <span>★</span></span>
+            <span class="marquee-item">USTP <span>★</span></span>
+            <span class="marquee-item">HTML <span>★</span></span>
+            <span class="marquee-item">CSS <span>★</span></span>
+            <span class="marquee-item">JavaScript <span>★</span></span>
+            <span class="marquee-item">Oroquieta City <span>★</span></span>
+            <span class="marquee-item">Available for Projects <span>★</span></span>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <!-- Left: Text Content -->
+        <div class="hero-left">
+            <div class="hero-eyebrow">
+                <span class="eyebrow-dot"></span>
+                Open to New Projects
+            </div>
+
+            <h1 class="hero-title">
+                <span class="outline">Jesrelle</span><br>
+                <span>Dave</span><br>
+                <span class="gradient-text">Garcia</span>
+            </h1>
+
+            <p class="hero-sub">
+                19-year-old <strong>IT student</strong> at the University of Science and Technology
+                of Southern Philippines — building skills in web development and crafting digital experiences.
+            </p>
+
+            <div class="hero-actions">
+                <button class="btn-primary" onclick="document.querySelector('.card-labs').scrollIntoView({behavior:'smooth'})">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                    Explore Work
+                </button>
+                <button class="btn-ghost" onclick="document.querySelector('.card-bio').scrollIntoView({behavior:'smooth'})">
+                    View Bio
+                </button>
+            </div>
+
+            <div class="hero-stats">
+                <div>
+                    <div class="stat-num">3<sup>+</sup></div>
+                    <div class="stat-label">Projects</div>
+                </div>
+                <div>
+                    <div class="stat-num">19</div>
+                    <div class="stat-label">Years Old</div>
+                </div>
+                <div>
+                    <div class="stat-num">1<sup>st</sup></div>
+                    <div class="stat-label">Year BSIT</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right: Photo -->
+        <div class="hero-photo">
+            <div class="photo-decor-ring"></div>
+            <div class="photo-float-tag">BSIT Student ✦</div>
+            <div class="photo-frame">
+                <img src="image/Ako ni.jpg" alt="Jesrelle Dave Garcia" onerror="this.style.display='none'">
+                <div class="photo-placeholder">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+                        <circle cx="12" cy="8" r="4"/>
+                        <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
+                    </svg>
+                    <span>Your Photo Here</span>
+                </div>
+                <div class="photo-badge">
+                    <strong>Jesrelle Dave Garcia</strong>
+                    <span>Upper Lamac, Oroquieta City</span>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Info Cards -->
+    <div class="sections">
+
+        <!-- Bio Data Card -->
+        <div class="card card-bio">
+            <div class="section-label">Bio Data</div>
+            <table class="bio-table">
+                <tr><td class="lbl">Name</td><td class="val">Jesrelle Dave Garcia</td></tr>
+                <tr><td class="lbl">Age</td><td class="val">19 years old</td></tr>
+                <tr><td class="lbl">Birthday</td><td class="val">June 13, 2006</td></tr>
+                <tr><td class="lbl">Gender</td><td class="val">Male</td></tr>
+                <tr><td class="lbl">Address</td><td class="val">Upper Lamac, Oroquieta City</td></tr>
+                <tr><td class="lbl">Email</td><td class="val">jesrellgarcia13@gmail.com</td></tr>
+                <tr><td class="lbl">School</td><td class="val">USTP — University of Science and Technology of Southern Philippines</td></tr>
+                <tr><td class="lbl">Course</td><td class="val">BS Information Technology</td></tr>
+            </table>
+        </div>
+
+        <!-- Skills Card -->
+        <div class="card card-skills" style="grid-column: span 2">
+            <div class="section-label">Technical Skills</div>
+            <div class="skills-grid">
+                <span class="skill-tag">HTML</span>
+                <span class="skill-tag">CSS</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">WALA RA GUD</span>
+            </div>
+        </div>
+
+        <!-- Laboratory Activities Card -->
+        <div class="card card-labs">
+            <div class="section-label">Laboratory Activities</div>
+            <div class="labs-grid">
+                <button class="lab-btn" onclick="openLab(1)">
+                    <div class="lab-num">01</div>
+                    <div class="lab-title">Mission Log</div>
+                    <div class="lab-sub">Laboratory Activity 1</div>
+                    <span class="lab-arrow">↗</span>
+                </button>
+                <button class="lab-btn" onclick="openLab(2)">
+                    <div class="lab-num">02</div>
+                    <div class="lab-title">Profile Card</div>
+                    <div class="lab-sub">Laboratory Activity 2</div>
+                    <span class="lab-arrow">↗</span>
+                </button>
+                <button class="lab-btn" onclick="openLab(3)">
+                    <div class="lab-num">03</div>
+                    <div class="lab-title">To-Do List</div>
+                    <div class="lab-sub">Laboratory Activity 3</div>
+                    <span class="lab-arrow">↗</span>
+                </button>
+                <button class="lab-btn explore-btn">
+                    <div class="lab-num">★</div>
+                    <div class="lab-title">Explore All</div>
+                    <div class="lab-sub">View All Projects</div>
+                    <span class="lab-arrow">↗</span>
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <div class="footer-bar">
+        <span>Built with HTML<span class="footer-dot"></span>CSS<span class="footer-dot"></span>JavaScript</span>
+        <span>&copy; 2025 Jesrelle Dave Garcia</span>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
