@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Mission Control - The Observer</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="active">Home</a>
+            <a href="crew.html">Crew</a>
+            <a href="status.html">Status</a> 
+            <a href="index.html">Back To Portfolio</a>
+        </nav>
+        <h1>The Observer: Mission to Alpha Centauri</h1>
+        <h2>Mission Status: <span class="status-active">Active</span></h2>
+    </header>
+
+    <main>
+        <section class="mission-intro">
+            <p>We are exploring the outer rim of the galaxy on a <em>classified</em> mission to Alpha Centauri aboard the spaceship <strong>The Observer.</strong></p>
+
+            <div class="planet-image">
+                <img src="../images/Planet.jpeg" alt="Planet" onerror="this.style.display='none'">
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <h2>Mission Communication</h2>
+            <form class="mission-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="department">Department:</label>
+                    <select id="department" name="department" required>
+                        <option value="">Select Department</option>
+                        <option value="engineering">Engineering</option>
+                        <option value="science">Science</option>
+                        <option value="medical">Medical</option>
+                        <option value="navigation">Navigation</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Enter your message to command" required></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Submit Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 <a href="https://www.nasa.gov" target="_blank">United Space Federation</a></p>
+        <p>Instructor: Mr. Ray An Quinon | Web System and Technologies</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
